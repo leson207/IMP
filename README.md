@@ -10,6 +10,7 @@ Bước 1: Tìm các mảng màu bằng color segmentation với k-means:
  ![image](https://user-images.githubusercontent.com/74070396/228534742-c550fca5-c3f2-43c3-898b-0ee8998b927b.png)
 
 Bước 2: Tìm tọa độ chính xác của các mảng màu và lưu vào danh sách, sẽ chỉ lấy các mảng màu có số điểm ảnh lớn hơn 10000:
+
 Bước 3: Viết các chỉnh sửa: các ảnh dưới đây dung chung mảng đám mây
 
 Đổi màu:
