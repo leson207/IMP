@@ -17,16 +17,13 @@ gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 diff = cv2.absdiff(gray1, gray2)
 cv2.imshow("diff(img1, img2)", diff)
 
-# Apply threshold. Apply both THRESH_BINARY and THRESH_OTSU
 thresh = cv2.threshold(diff, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
 cv2.imshow("Threshold", thresh)
 
-# Dilation
 kernel = np.ones((5, 5), np.uint8)
 dilate = cv2.dilate(thresh, kernel, iterations=2)
 cv2.imshow("Dilate", dilate)
 
-# Calculate contours
 contours = cv2.findContours(dilate.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 print(contours)
 contours = imutils.grab_contours(contours)
@@ -40,7 +37,6 @@ for contour in contours:
         cv2.rectangle(img1, (x, y), (x + w, y + h), (0, 0, 255), 2)
         cv2.rectangle(img2, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
-# Show images with rectangles on differences
 x = np.zeros((img_height, 10, 3), np.uint8)
 result = np.hstack((img1, x, img2))
 cv2.imwrite("dif.jpg",result)
