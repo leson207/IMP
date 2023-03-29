@@ -42,15 +42,24 @@ Thêm vào 1 mảng màu:
  ![image](https://user-images.githubusercontent.com/74070396/228534923-5672dbb6-254d-48b0-8ee9-7758d5ab8751.png)
 
 Bước 4: Viết chương trình chính
+
 Đọc ảnh, tìm các mảng màu và tọa độ của chúng.
+
 Nhập vào level=1,2,3:
+
 Ta sẽ random số mảng màu được chỉnh sửa theo từng level:
+
 Level 1=1
+
 Level 2=2
+
 Level 3=3
+
 ….
 Với mỗi mảng màu, ta sẽ chọn ngẫu nhiên một chỉnh sửa.
+
 Để đảm bảo tính toàn vẹn của ảnh, mảng màu cuối cùng sẽ có thể áp dụng tùy ý các chỉnh sửa trên, nhưng các mảng màu trước đó sẽ chỉ được xóa hoặc đổi màu.
+
 2,Giải:
 Tính toán khác biệt tuyệt đối giữa 2 ảnh
 
