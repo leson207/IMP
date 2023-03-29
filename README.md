@@ -5,7 +5,7 @@
 
  ![image](https://user-images.githubusercontent.com/74070396/228534711-d7c72305-599c-4e7a-ab9b-4ee2f61f0cb1.png)
 
-Bước 1:Tìm các mảng màu:
+Bước 1: Tìm các mảng màu bằng color segmentation với k-means:
 
  ![image](https://user-images.githubusercontent.com/74070396/228534742-c550fca5-c3f2-43c3-898b-0ee8998b927b.png)
 
