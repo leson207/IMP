@@ -1,5 +1,6 @@
 # IMP
 1,Sinh dữ liệu:
+
 Ảnh gốc:
 
  ![image](https://user-images.githubusercontent.com/74070396/228534711-d7c72305-599c-4e7a-ab9b-4ee2f61f0cb1.png)
