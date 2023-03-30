@@ -11,6 +11,7 @@ Bước 1: Tìm các mảng màu bằng color segmentation với k-means:
 
 Bước 2: Tìm tọa độ chính xác của các mảng màu và lưu vào danh sách, sẽ chỉ lấy các mảng màu có số điểm ảnh lớn hơn 10000:
 các phần tử trong danh sách gồm các thành phần : tọa độ 1 điểm bất kì trong mảng màu, số điểm màu trong mảng, tọa độ 2 góc chéo của hình chữ nhật bé nhất bao kín mảng
+
 Bước 3: Viết các chỉnh sửa: các ảnh dưới đây dung chung mảng đám mây
 
 Đổi màu: Duyệt từng điểm ảnh trong mảng màu và đổi giá trị
