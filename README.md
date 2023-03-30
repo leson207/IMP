@@ -34,7 +34,7 @@ Xóa mảng màu: duyệt từ viền vào trong và thay thế giá trị của
 
  ![image](https://user-images.githubusercontent.com/74070396/228534860-83555f8f-29ac-460d-a6d3-c960b91d24da.png)
 
-Thêm vào 1 mảng màu: Chọn ngẫu nhiên một vị trí trong mảng màu và vẽ thêm 1 ô vương 50*50
+Thêm vào 1 mảng màu: Chọn ngẫu nhiên một vị trí trong mảng màu và vẽ thêm 1 ô vuông 50*50
 
  ![image](https://user-images.githubusercontent.com/74070396/228534894-eed558c2-1624-4c39-998b-9a60bd3ac497.png)
 
