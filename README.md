@@ -10,30 +10,30 @@ Bước 1: Tìm các mảng màu bằng color segmentation với k-means:
  ![image](https://user-images.githubusercontent.com/74070396/228534742-c550fca5-c3f2-43c3-898b-0ee8998b927b.png)
 
 Bước 2: Tìm tọa độ chính xác của các mảng màu và lưu vào danh sách, sẽ chỉ lấy các mảng màu có số điểm ảnh lớn hơn 10000:
-
+các phần tử trong danh sách gồm các thành phần : tọa độ 1 điểm bất kì trong mảng màu, số điểm màu trong mảng, tọa độ 2 góc chéo của hình chữ nhật bé nhất bao kín mảng
 Bước 3: Viết các chỉnh sửa: các ảnh dưới đây dung chung mảng đám mây
 
-Đổi màu:
+Đổi màu: Duyệt từng điểm ảnh trong mảng màu và đổi giá trị
 
  ![image](https://user-images.githubusercontent.com/74070396/228534765-5e3f7725-d09d-416e-8056-0e524e4cb85b.png)
 
-Lật ngang:
+Lật ngang: Duyệt từng điểm ảnh trong hình chữ nhật bao quanh mảng màu và hoán đổi đối xứng theo chiều ngang
 
  ![image](https://user-images.githubusercontent.com/74070396/228534780-f0859be0-dd67-4c46-af7f-b4ad4aacd9cc.png)
 
-Lật dọc;
+Lật dọc: Duyệt từng điểm ảnh trong hình chữ nhật bao quanh mảng màu và hoán đổi đối xứng theo chiều dọc
 
 ![image](https://user-images.githubusercontent.com/74070396/228534819-a822a912-4af6-49f7-be96-201e0502850c.png)
 
-Nhân bản mảng màu đến các vị trí trái trên, trái dưới, phải trên, phải dưới ngẫu nhiên:
+Nhân bản mảng màu: sao chép giá trị mảng màu đến các vị trí trái trên, trái dưới, phải trên, phải dưới ngẫu nhiên:
 
  ![image](https://user-images.githubusercontent.com/74070396/228534846-eae0a323-ff99-471d-b075-075e69c7f4d3.png)
 
-Xóa mảng màu và thay thế bằng màu từ xung quanh:
+Xóa mảng màu: duyệt từ viền vào trong và thay thế giá trị của điẻm màu bằng giá trị trung bình các điểm màu xung quanh:
 
  ![image](https://user-images.githubusercontent.com/74070396/228534860-83555f8f-29ac-460d-a6d3-c960b91d24da.png)
 
-Thêm vào 1 mảng màu:
+Thêm vào 1 mảng màu: Chọn ngẫu nhiên một vị trí trong mảng màu và vẽ thêm 1 ô vương 50*50
 
  ![image](https://user-images.githubusercontent.com/74070396/228534894-eed558c2-1624-4c39-998b-9a60bd3ac497.png)
 
@@ -45,7 +45,7 @@ Bước 4: Viết chương trình chính
 
 Đọc ảnh, tìm các mảng màu và tọa độ của chúng.
 
-Nhập vào level=1,2,3:
+Nhập vào level=1,2,3...:
 
 Ta sẽ random số mảng màu được chỉnh sửa theo từng level:
 
